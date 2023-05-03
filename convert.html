@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Converter</title>
+  </head>
+  <body>
+    <h1>Convert your video</h1>
+    <form action="/convert" method="post">
+      <label for="format">Output format:</label>
+      <select name="format" id="format">
+        <option value="mp4">MP4</option>
+        <option value="avi">AVI</option>
+        <option value="mkv">MKV</option>
+        <option value="mov">MOV</option>
+        <option value="flv">FLV</option>
+        <option value="webm">WEBM</option>
+      </select>
+      <br />
+      <label for="resolution">Resolution:</label>
+      <select name="resolution" id="resolution">
+        <option value="1920:-1">1920x1080</option>
+        <option value="1280:-1">1280x720</option>
+        <option value="854:-1">854x480</option>
+        <option value="640:-1">640x360</option>
+        <option value="426:-1">426x240</option>
+      </select>
+      <br />
+      <input type="submit" value="Convert" />
+    </form>
+  </body>
+</html>
